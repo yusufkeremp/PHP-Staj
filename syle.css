@@ -13,3 +13,7 @@
     border-radius: 8px;
 
 }
+.body {
+    display: flex;
+    margin: 15 15 15 15;
+}
