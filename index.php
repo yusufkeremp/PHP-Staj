@@ -1,13 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Basit Hesap Makinesi</title>
 </head>
 <body>
-    denemee222
-    flklsglkglkgalkag
-    ttttttt
+
+    <h3>Basit Hesap Makinesi</h3>
+
+    <form method="post">
+        <input type="number" name="sayi1" placeholder="1. Sayı" required step="any">
+        
+        <select name="islem">
+            <option value="topla">Topla (+)</option>
+            <option value="cikar">Çıkar (-)</option>
+            <option value="carp">Çarp (*)</option>
+            <option value="bol">Böl (/)</option>
+        </select>
+
+        <input type="number" name="sayi2" placeholder="2. Sayı" required step="any">
+        
+        <button type="submit" name="hesapla">Hesapla</button>
+    </form>
+
+    <br>
+    <hr>
+
+    <?php
+
+    if (isset($_POST['hesapla'])) {
+        $s1 = $_POST['sayi1'];
+        $s2 = $_POST['sayi2'];
+        $islem = $_POST['islem'];
+        $sonuc = "";
+
+        if ($islem == "topla") {
+            $sonuc = $s1 + $s2;
+        } elseif ($islem == "cikar") {
+            $sonuc = $s1 - $s2;
+        } elseif ($islem == "carp") {
+            $sonuc = $s1 * $s2;
+        } elseif ($islem == "bol") {
+            if ($s2 != 0) {
+                $sonuc = $s1 / $s2;
+            } else {
+                $sonuc = "Tanımsız (Sıfıra bölünemez)";
+            }
+        }
+        echo "<b>Sonuç: $sonuc</b>";
+    }
+    ?>
+
 </body>
 </html>
