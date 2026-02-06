@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Basit Hesap Makinesi</title>
+    <link rel="stylesheet" href="syle.css">
 </head>
 <body>
+  <div class="assa"> 
 
     <h3>Basit Hesap Makinesi</h3>
+    
 
     <form method="post">
         <input type="number" name="sayi1" placeholder="1. Sayı" required step="any">
@@ -22,6 +25,8 @@
         
         <button type="submit" name="hesapla">Hesapla</button>
     </form>
+</div>
+    
 
     <br>
     <hr>
@@ -52,4 +57,5 @@
     ?>
 
 </body>
+
 </html>
