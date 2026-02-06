@@ -13,9 +13,22 @@
         .pagination a { padding: 8px 16px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin: 0 5px; }
         .pagination a:hover { background: #0056b3; }
         code { background: #e9ecef; padding: 2px 5px; border-radius: 4px; color: #e83e8c; }
+        .login-box { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #ddd; max-width: 300px; }
+        .login-box input { width: 100%; padding: 8px; margin: 10px 0; box-sizing: border-box; }
+        .login-box button { width: 100%; padding: 10px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
     </style>
 </head>
 <body>
+
+    <div class="login-box">
+        <h4>Giriş</h4>
+        <input type="text" placeholder="Kullanıcı Adı">
+        <input type="password" id="sifre-alani" placeholder="Şifre">
+        <button>Giriş Yap</button>
+        <p style="font-size: 11px; color: #666; margin-top: 10px;">
+            <code>type="password"</code> <code>type="text"</code>
+        </p>
+    </div>
 
     <?php
     $tum_gonderiler = [];
