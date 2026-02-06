@@ -15,7 +15,7 @@
     <form method="post">
         <input type="number" name="sayi1" placeholder="1. Sayı" required step="any">
         
-        <select name="islem" select class="is">
+        <select name="islem" class="is">
             <option value="topla">Topla (+)</option>
             <option value="cikar">Çıkar (-)</option>
             <option value="carp">Çarp (*)</option>

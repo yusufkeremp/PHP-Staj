@@ -1,26 +1,38 @@
-.assa {
-    text-align: center;
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 100vh;
+    margin: 0;
 }
-.button{
-    border:none;
+
+.assa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    border: none;
     border-radius: 8px;
 }
-.is{
+
+.is {
     border-radius: 8px;
 
 }
+
 .body {
     display: flex;
-   
+
 }
+
 .b {
     text-align: center;
 }
-.is{
+
+.is {
     margin-top: 100px;
     margin-bottom: 100px;
 }
