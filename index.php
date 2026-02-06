@@ -8,7 +8,7 @@
 
     <h3>Basit Hesap Makinesi</h3>
 
-    <form method="post">
+    <form method="get">
         <input type="number" name="sayi1" placeholder="1. Sayı" required step="any">
         
         <select name="islem">
