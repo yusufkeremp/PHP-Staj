@@ -130,14 +130,12 @@
         $boy = $_POST['boy'];
         $aktivite = $_POST['aktivite'];
 
-        // BMR (Bazal Metabolizma Hızı) Hesaplama - Harris-Benedict Formülü
         if ($cinsiyet == "erkek") {
             $bmr = 88.362 + (13.397 * $kilo) + (4.799 * $boy) - (5.677 * $yas);
         } else {
             $bmr = 447.593 + (9.247 * $kilo) + (3.098 * $boy) - (4.330 * $yas);
         }
 
-        // Günlük toplam harcanan enerji (TDEE)
         $günlük_kalori = $bmr * $aktivite;
         $günlük_kalori = round($günlük_kalori);
 
