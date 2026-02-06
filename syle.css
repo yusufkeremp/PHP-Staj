@@ -1,5 +1,8 @@
 .assa {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .button{
@@ -8,5 +11,5 @@
 }
 .is{
     border-radius: 8px;
-    
+
 }

@@ -9,7 +9,8 @@
   <div class="assa"> 
 
     <h3>Basit Hesap Makinesi</h3>
-    
+    <br>
+    <hr>
 
     <form method="post">
         <input type="number" name="sayi1" placeholder="1. Sayı" required step="any">
